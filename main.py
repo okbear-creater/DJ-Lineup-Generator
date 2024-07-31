@@ -6,7 +6,7 @@ def sort_names(text):
     names = [re.sub(r'\d+:\d+-\d+:\d+\s+', '', line).strip() for line in lines if line.strip()]
     return '\n'.join(sorted(set(name.upper() for name in names)))
 
-st.title("DJ Lineup Automator :headphones: :musical_keyboard: :technologist:")
+st.title("DJ Lineup Generator :headphones: :musical_keyboard: :technologist:")
 
 st.header("정렬 시킬 Lineup")
 
